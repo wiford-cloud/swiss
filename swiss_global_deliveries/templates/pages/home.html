@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+
+<table>
+    
+    <tr>
+        <thead>
+        <th>Name Of Item</th>
+        <th>Supplier</th>
+        <th>Description Notes</th>
+        <th>Expected Date of Delivery</th>
+        <th>Status</th>
+        </thead>
+    </tr>
+    {% for c in cl %}
+    <tr>
+        <td>{{c.Name_of_item}} </td>
+        <td>{{c.Supplier}}</td>
+        <td>{{c.Description_notes}}</td>
+        <td>{{c.Expected_Date_Delivery}}</td>
+        <td>{{c.Status}}</td>
+    </tr>
+    {% endfor %}
+    <button ><a href="{url 'pages/Client_create'}">Add Item</a></button>
+    
+
+</table>
+{% endblock %}
