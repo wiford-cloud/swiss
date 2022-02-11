@@ -46,7 +46,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'swiss_global_deliveries',
         'USER': 'postgres',
-        'PASSWORD': '@richdush1',
+        'PASSWORD': '18ab934ad3504e53b85118b2fcd9927d',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
@@ -90,7 +90,7 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "swiss_global_deliveries.users",
-    #"swiss_global_deliveries.shipments",
+    # "swiss_global_deliveries.shipments",
     # Custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
