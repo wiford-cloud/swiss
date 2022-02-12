@@ -3,15 +3,16 @@
 
 {% block body %}
 
-<table>
-    
+<table class=" table table-sm">
+
     <tr>
         <thead>
-        <th>Name Of Item</th>
-        <th>Supplier</th>
-        <th>Description Notes</th>
-        <th>Expected Date of Delivery</th>
-        <th>Status</th>
+            <th>Name Of Item</th>
+            <th>Supplier</th>
+            <th>Description Notes</th>
+            <th>Expected Date of Delivery</th>
+            <th>Status</th>
+            <th>Action</th>
         </thead>
     </tr>
     {% for c in cl %}
@@ -23,8 +24,8 @@
         <td>{{c.Status}}</td>
     </tr>
     {% endfor %}
-    <button ><a href="{url 'pages/Client_create'}">Add Item</a></button>
-    
+    <button><a class="btn btn-primary btn-sm btn block" href="{url 'pages/Client_create'}">Add Item</a></button>
+
 
 </table>
 {% endblock %}
